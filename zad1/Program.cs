@@ -5,7 +5,21 @@
 918 -> 1
 */
 
-Console.Write("Введите трехзначное число: ");
+/*Console.Write("Введите трехзначное число: ");
 int number = Convert.ToInt32(Console.ReadLine());
 int N = (number % 100)/10;
 Console.Write($"Второе число это {N}");
+*/
+
+// через метод
+
+int NumCenter(int number)
+{
+    
+ int result = ((number % 100 ) / 10);
+ return result;
+}
+Console.WriteLine("Введите трехзначное число: ");
+int number = Convert.ToInt32(Console.ReadLine());
+int fin = NumCenter(number);
+Console.Write($"Вторая цифра числа {number} это {fin}");
